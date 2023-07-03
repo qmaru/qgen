@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"qgen/services"
+	"github.com/qmaru/qgen/services"
 
 	"github.com/spf13/cobra"
 )

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"qgen/cmds"
+	"github.com/qmaru/qgen/cmds"
 )
 
 func main() {

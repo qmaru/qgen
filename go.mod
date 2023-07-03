@@ -1,4 +1,4 @@
-module qgen
+module github.com/qmaru/qgen
 
 go 1.20
 
