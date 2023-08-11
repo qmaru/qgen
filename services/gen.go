@@ -14,10 +14,6 @@ type templateData struct {
 	Entries []templateCommon
 }
 
-type templateEntry struct {
-	Name string
-}
-
 type templateCommon struct {
 	FirstPath   string
 	SecnondPath string
@@ -27,8 +23,8 @@ type templateCommon struct {
 }
 
 type Project struct {
-	Name     string
-	Type     string
+	Name string
+	Type string
 }
 
 func (p *Project) mainTemplate() templateData {

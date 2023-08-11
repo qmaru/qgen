@@ -322,14 +322,14 @@ import (
 
 	"{{ .Name }}/configs"
 
-	"github.com/qmaru/qdb"
+	"github.com/qmaru/qdb/postgresql"
 )
 
 const (
 	SomeTable        string = "some_table"
 )
 
-var Psql qdb.PostgreSQL
+var Psql *postgresql.PostgreSQL
 
 func init() {
 	cfg, err := configs.DatabaseConfig()
@@ -343,7 +343,7 @@ func init() {
 	password := cfg["password"].(string)
 	dbname := cfg["dbname"].(string)
 
-	Psql = qdb.NewPostgreSQL(host, port, username, password, dbname)
+	Psql = postgresql.New(host, port, username, password, dbname)
 }
 
 // DBPing 测试数据库连接
